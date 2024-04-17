@@ -61,12 +61,12 @@ axios(registeredCompaniesUrl)
       }
     });
 
-    console.log("Fetching companies data completed.");
+    console.log("Fetching clients data completed.");
 
     const addCompaniesToDb = async (companies) => {
       try {
-        await axios.post("http://localhost:5001/companies", { companies });
-        console.log("Companies added successfully.");
+        await axios.post("http://localhost:5001/clients", { companies });
+        console.log("Clients added successfully.");
       } catch (error) {
         console.log("Error while adding companies.", error);
       }

@@ -25,7 +25,7 @@ const App = () => {
   useEffect(() => {
     const fetchCompanies = async () => {
       const response = await fetch(
-        `http://localhost:5001/companies?q=${search}&page=${page}`
+        `http://localhost:5001/clients?q=${search}&page=${page}`
       );
       const data = await response.json();
       setCompanies(data.companies);
@@ -36,7 +36,7 @@ const App = () => {
 
   const handleDeleteUser = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5001/companies/${id}`, {
+      const response = await fetch(`http://localhost:5001/clients/${id}`, {
         method: "DELETE",
       });
 

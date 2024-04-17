@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 /** Route Config */
-app.use("/companies", companyRouter);
+app.use("/clients", companyRouter);
 
 /** Handling unknown Routes */
 app.all("*", (req, res, next) => [

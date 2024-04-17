@@ -31,7 +31,7 @@ exports.fetchCompaniesDetails = async (companies) => {
             address: companyDetails["Address"],
           };
 
-          // await axios.post("http://localhost:5001/companies", {
+          // await axios.post("http://localhost:5001/clients", {
           //   companies: [comp],
           // });
 

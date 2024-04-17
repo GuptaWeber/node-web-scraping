@@ -29,7 +29,7 @@ export const AddCompany = () => {
   const handleSubmit = async (values) => {
     try {
       const { companyName, cin, pinCode, email, address } = values;
-      const response = await axios.post("http://localhost:5001/companies", {
+      const response = await axios.post("http://localhost:5001/clients", {
         companyName,
         cin,
         pinCode,

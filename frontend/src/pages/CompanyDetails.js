@@ -7,9 +7,7 @@ export const CompanyDetails = () => {
 
   useEffect(() => {
     const fetchCompany = async () => {
-      const response = await fetch(
-        `http://localhost:5001/companies/${clientId}`
-      );
+      const response = await fetch(`http://localhost:5001/clients/${clientId}`);
       const data = await response.json();
 
       setCompany(data);
