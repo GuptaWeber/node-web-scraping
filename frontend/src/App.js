@@ -104,9 +104,9 @@ const App = () => {
                       </AlertDialog.Trigger>
 
                       <AlertDialog.Content maxWidth="450px">
-                        <AlertDialog.Title>Delete User</AlertDialog.Title>
+                        <AlertDialog.Title>Delete Company</AlertDialog.Title>
                         <AlertDialog.Description size="2">
-                          Are you sure? Do you want to delete the user?
+                          Are you sure? Do you want to delete the company?
                         </AlertDialog.Description>
 
                         <Flex gap="3" mt="4" justify="end">
@@ -121,7 +121,7 @@ const App = () => {
                               color="red"
                               onClick={() => handleDeleteUser(company.id)}
                             >
-                              Delete User
+                              Delete Company
                             </Button>
                           </AlertDialog.Action>
                         </Flex>

@@ -7,12 +7,17 @@ const {
   deleteCompanyById,
 } = require("../controllers/companyController");
 
-router.route("/").get(getCompanies).post(addCompaniesToDb);
+const {
+  getCompaniesFromElastic,
+  deleteCompanyByIdFromElastic,
+} = require("../elastic-search-service/elasticController");
+
+router.route("/").get(getCompaniesFromElastic).post(addCompaniesToDb);
 
 router
   .route("/:id")
   .get(getCompanyById)
   .patch(updateCompanyById)
-  .delete(deleteCompanyById);
+  .delete(deleteCompanyByIdFromElastic);
 
 module.exports = router;
