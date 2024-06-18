@@ -35,6 +35,11 @@ companies: []
 }
 ```
 
+# Instructions to run Elasticsearch
+
+- configure the elastic search instance
+- update the elastic search url on `elastic.config.js`
+
 # Instructions to run Frontend
 
 - cd frontend
